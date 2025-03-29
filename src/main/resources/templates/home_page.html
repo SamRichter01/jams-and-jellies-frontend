@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" hre"styles/style.css">
+</head>
+<body>
+    <div th:insert="~{components/navigation::navigation}"></div>
+    <h1>This is the home page!</h1>
+    <form method="get" action="/products">
+        <input name="login" placeholder="Enter login" type="text">
+        <input name="email" placeholder="Enter email" type="text">
+        <input type="submit" value="Show products">
+    </form>
+    <div th:insert="~{components/footer::footer}"></div>
+</body>
+</html>

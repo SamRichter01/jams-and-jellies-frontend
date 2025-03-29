@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" hre"styles/style.css">
+</head>
+<body>
+    <div th:insert="~{components/navigation::navigation}"></div>
+    <h1>This is the product page <span th:text="${userLogin}"></span>.</h1>
+    <div th:insert="~{components/footer::footer}"></div>
+</body>
+</html>
